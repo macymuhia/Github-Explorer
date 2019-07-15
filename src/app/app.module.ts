@@ -10,13 +10,15 @@ import { SearchformComponent } from './searchform/searchform.component';
 
 import { GithubService } from '../app/github.service';
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     SearchformComponent,
-    MyProfileComponent
+    MyProfileComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
