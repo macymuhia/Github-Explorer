@@ -1,0 +1,44 @@
+.container {
+    margin-top: 100px;
+}
+
+.nav {
+    background-color: #010101;
+    height: 65px;
+    padding: 10px 20px 0px 20px;
+}
+
+.col-md-6 {
+    display: inline;
+}
+
+.row li {
+    width: fit-content;
+}
+
+#logo {
+    width: 50px;
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.right {
+    float: right;
+}
+
+.nav-item input {
+    width: 300px;
+    margin-left: 100px;
+}
+
+main {
+    margin-top: 70px;
+}
