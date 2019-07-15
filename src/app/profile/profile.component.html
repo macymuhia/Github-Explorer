@@ -30,7 +30,7 @@
                 <div class="card">
                     <h5>Repositories</h5>
                 </div>
-                <div class="card" *ngFor="let repo of githubUser.repos">
+                <div appHighlight class="card" *ngFor="let repo of githubUser.repos">
                     <a href="{{repo.html_url}}" target="_blank">
                         <h6 class="list-group-item-heading"><strong>{{repo.name}}</strong></h6>
                     </a>
