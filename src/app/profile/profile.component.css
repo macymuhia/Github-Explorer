@@ -1,3 +1,35 @@
 main {
     margin-top: 70px;
 }
+
+.col-md-9 .card {
+    margin: 15px;
+    padding: 15px 20px;
+}
+
+.card {
+    background-color: whitesmoke;
+}
+
+h6 {
+    color: #0354b1;
+    font-size: 15px;
+}
+
+.card a {
+    color: gray;
+    font-size: 20px;
+}
+
+.user {
+    padding-left: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.card h5 {
+    color: rgba(0, 0, 0, 0.767);
+}
