@@ -3,9 +3,6 @@ import { Http, Headers } from '@angular/http';
 
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-// import 'rxjs/add/operator/map';
-// import 'rxjs/add/operator/catch';
-// import 'rxjs/add/observable/throw';
 
 
 
@@ -17,7 +14,7 @@ export class GithubService {
     private clientId: string = '62bed69aeaad71609698';
     private clientSecret: string = 'a019bbd4bc0f3b6a11a517bf01ba6fdb41d1d5fa';
 
-    constructor(private _http: Http) {
+    constructor(private http: Http) {
         // console.log('Github Service Ready.');
         this.userName = '';
     }
@@ -25,7 +22,7 @@ export class GithubService {
 
     getUser() {
         if (this.userName) {
-            return this._http.get('https://api.github.com/users/' + this.userName
+            return this.http.get('https://api.github.com/users/' + this.userName
                 + '?client_id=' + this.clientId
                 + '&client_secret=' + this.clientSecret)
                 .pipe(map((res: any) => res.json()))
@@ -35,7 +32,7 @@ export class GithubService {
 
     getRepos() {
         if (this.userName) {
-            return this._http.get('https://api.github.com/users/' + this.userName
+            return this.http.get('https://api.github.com/users/' + this.userName
                 + '/repos?client_id=' + this.clientId
                 + '&client_secret=' + this.clientSecret)
                 .pipe(map(res => res.json()))
