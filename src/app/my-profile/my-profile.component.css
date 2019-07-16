@@ -33,3 +33,7 @@ h6 {
 .card h5 {
     color: rgba(0, 0, 0, 0.767);
 }
+
+.card h3 {
+    margin-top: 5px;
+}
