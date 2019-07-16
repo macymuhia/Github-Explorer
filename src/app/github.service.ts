@@ -3,7 +3,6 @@ import { Http, Headers } from '@angular/http';
 
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
 
 
 
@@ -23,7 +22,7 @@ export class GithubService {
 
     getUser() {
         if (this.userName) {
-            return this.http.get(environment.httpsUrl + this.userName
+            return this.http.get('https://api.github.com/users/' + this.userName
                 + '?client_id=' + this.clientId
                 + '&client_secret=' + this.clientSecret)
                 .pipe(map((res: any) => res.json()))
@@ -33,7 +32,7 @@ export class GithubService {
 
     getRepos() {
         if (this.userName) {
-            return this.http.get(environment.httpsUrl + this.userName
+            return this.http.get('https://api.github.com/users/' + this.userName
                 + '/repos?client_id=' + this.clientId
                 + '&client_secret=' + this.clientSecret)
                 .pipe(map(res => res.json()))
