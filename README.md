@@ -2,7 +2,7 @@
 
 ![Github Explorer Screenshot](./src/assets/images/screenshot.png)
 
-#### Check out Cute Quotes [here](https://macymuhia.github.io/Github-Explorer/)
+#### Check out Github Explorer [here](https://macymuhia.github.io/Github-Explorer/)
 
 Last modified 16th July 2019.
 #### By **Mercy Muhia**
