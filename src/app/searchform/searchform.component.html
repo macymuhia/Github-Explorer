@@ -1,7 +1,7 @@
 <header>
     <ul class="nav fixed-top">
         <li class="nav-item">
-            <img src="../assets/images/githublogo.png" id="logo" alt="">
+            <img src="../assets/images/Github-Explorer/githublogo.png" id="logo" alt="">
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Github Explorer</a>
@@ -10,45 +10,7 @@
             <li class="nav-item">
                 <input typeaheadWaitMs="1000" type="text" name="username" class="form-control" placeholder="search username or repo name ..." [(ngModel)]="githubUser.userName" (keyup)="searchUser()" />
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Search</a>
-            </li> -->
         </form>
 
     </ul>
 </header>
-
-<!-- 
-<nav class="navbar  navbar-dark bg-inverse">
-    <div class="row pull-xs-right">
-        <div class="col-md-3 hidden-md-down">
-            <a class="navbar-brand" href="#">Github Search Profile</a>
-        </div>
-        <div class=" col-md-6">
-
-            <form id="searchForm">
-
-                
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="text" name="username" class="form-control" placeholder="Enter A Github Username..." [(ngModel)]="githubUser.userName" (keyup)="searchUser()">
-                        <div class="input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
-                    </div>
-                </div>
-
-
-            </form>
-
-        </div>
-        <div class="col-md-3">
-            <nav class="nav navbar-nav  pull-xs-right">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/_tipek"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/tahaipek"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-                </li>
-            </nav>
-        </div>
-    </div>
-</nav> -->

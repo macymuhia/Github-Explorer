@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
 import { debounceTime } from 'rxjs/operators';
 import { GithubService } from '../github.service';
-// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { GithubUser } from '../igithub-user';
 import { from } from 'rxjs';
@@ -57,7 +56,6 @@ export class SearchformComponent implements OnInit {
 
 
             this._githubService.getRepos().pipe(debounceTime(2000)).subscribe(repos => {
-                // console.log(repos);
                 this.githubUser.repos = repos;
                 this.userUpdated.emit(this.githubUser);
             },
